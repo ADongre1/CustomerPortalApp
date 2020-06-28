@@ -1,7 +1,6 @@
 package com.dongre.customerportal.model;
 
 public class Home {
-    private long Id;
     private int Age;
     private String Material;
     private String Security;
