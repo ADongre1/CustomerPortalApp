@@ -1,0 +1,14 @@
+#headerBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a424f;
+    width: 100%;
+    height: 50px;
+}
+
+#headerTitle{
+    padding-left:25px;
+    color:#B6AAA7;
+}

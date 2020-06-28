@@ -1,4 +1,9 @@
-export default class Customer {
+import Home from './Home';
+import AutoPolicy from './AutoPolicy';
+import Vehicle from './Vehicle';
+import HomePolicy from './HomePolicy';
+
+export default interface Customer {
 
     Id: number;
     DOB: Date;
@@ -14,23 +19,4 @@ export default class Customer {
     HomePolicies?: HomePolicy[];
     AutoPolicies?: AutoPolicy[];
     vehicles?: Vehicle[];
-
-    constructor(id: number, dob: Date, firstName: string, lastName: string, individuals: number,
-                mailingAddress: string, mailingZip: number, mailingCity: string,
-                mailingState: string, homes?: Home[], homePolicies?: HomePolicy[] ,pets?: boolean
-                autoPolicies?: AutoPolicy[], vehicles?: Vehicle[]){
-                    this.Id = id;
-                    this.DOB = dob;
-                    this.LastName = lastName;
-                    this.FirstName = firstName;
-                    this.Pets = pets;
-                    this.Individuals = individuals;
-                    this.MailingAddress = mailingAddress;
-                    this.MailingZip = mailingZip;
-                    this.MailingCity = mailingCity;
-
-
-                     
-                } 
-    
 }
